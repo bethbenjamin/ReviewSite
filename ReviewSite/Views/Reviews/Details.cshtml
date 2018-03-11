@@ -1,0 +1,44 @@
+﻿<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+@model ReviewSite.Models.Review
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<div class="w3-container">
+    <h2>Review Details</h2>
+    <p>View the details of your review:</p>
+
+    <div class="w3-panel w3-card">
+        <p>
+            <h3> @Html.DisplayNameFor(model => model.Category.Location):@Html.DisplayFor(model => model.Category.Location)</h3> <br />
+            @Html.DisplayNameFor(model => model.ArriveDate):   @Html.DisplayFor(model => model.ArriveDate)<br />
+            @Html.DisplayNameFor(model => model.DepartDate): @Html.DisplayFor(model => model.DepartDate)<br />
+            @Html.DisplayNameFor(model => model.Comment): @Html.DisplayFor(model => model.Comment)<br />
+            @Html.DisplayNameFor(model => model.Clean):    @Html.DisplayFor(model => model.Clean)<br />
+            @Html.DisplayNameFor(model => model.PetFriendly):  @Html.DisplayFor(model => model.PetFriendly)<br />
+            @Html.DisplayNameFor(model => model.Pool): @Html.DisplayFor(model => model.Pool)<br />
+            @Html.DisplayNameFor(model => model.OnSiteDining):  @Html.DisplayFor(model => model.OnSiteDining)<br />
+            @Html.DisplayNameFor(model => model.HouseKeeping):  @Html.DisplayFor(model => model.HouseKeeping)<br />
+            @Html.DisplayNameFor(model => model.Concierge): @Html.DisplayFor(model => model.Concierge)<br />
+            @Html.DisplayNameFor(model => model.NearBeach): @Html.DisplayFor(model => model.NearBeach)<br />
+            @Html.DisplayNameFor(model => model.BeachMiles):@Html.DisplayFor(model => model.BeachMiles)<br />
+            @Html.DisplayNameFor(model => model.NearMountain):@Html.DisplayFor(model => model.NearMountain)<br />
+            @Html.DisplayNameFor(model => model.MountainMiles): @Html.DisplayFor(model => model.MountainMiles)<br />
+            @Html.DisplayNameFor(model => model.BikesAvailable): @Html.DisplayFor(model => model.BikesAvailable)<br />
+            @Html.DisplayNameFor(model => model.ManyBikes): @Html.DisplayFor(model => model.ManyBikes)<br />
+
+
+</div>
+
+
+
+
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
