@@ -10,8 +10,10 @@
 <div class="w3-container">
     <h2>Review Details</h2>
     <p>View the details of your review:</p>
-
+    @*this will be styled for a card type / shadow around the edges *@
     <div class="w3-panel w3-card">
+
+        @*database items displayed here*@
         <p>
             <h3> @Html.DisplayNameFor(model => model.Category.Location):@Html.DisplayFor(model => model.Category.Location)</h3> <br />
             @Html.DisplayNameFor(model => model.ArriveDate):   @Html.DisplayFor(model => model.ArriveDate)<br />
@@ -42,3 +44,6 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+<table>
+
+</table>

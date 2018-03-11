@@ -1,25 +1,25 @@
-﻿.captionheader {
-    background-color: lightgray;
+﻿/*reviews section caption header*/
+.captionheader {
+    background-color: #337ab7;
     color: white;
-   
 }
 
+/*navigation bar */
 .navbar-inverse {
-    background-color: lightgrey;
+    background-color: #337ab7;
+    border-bottom: none;
 }
 
     .navbar-inverse .navbar-nav > li > a {
         color: white;
     }
 
-
-
-
-/* CUSTOMIZE THE CAROUSEL
-    -------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
+    .navbar-inverse .navbar-brand {
+        color: white;
+    }
+        /* CUSTOMIZE THE CAROUSEL*/
+        /* Carousel base class */
+        .carousel {
     margin-bottom: 60px;
 }
 
@@ -74,14 +74,14 @@
 
 
 
-
+    /*jumbotron style*/
 
 .jumbotron {
     background:none;
 }
 
 
-
+/*body style*/
 body {
     padding-top: 50px;
     padding-bottom: 20px;

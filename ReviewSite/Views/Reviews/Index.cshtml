@@ -9,11 +9,14 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
 @foreach (var item in Model)
 {
     <div class="col-sm-6 col-md-6">
         <div class="thumbnail">
             <div class="captionheader">
+                @*this is a thumbnail view for boxed information*@ 
+
                 <h3>
                     
                         @Html.DisplayFor(modelItem => item.Category.Location) <br />
@@ -22,6 +25,7 @@
             </div>
             <div class="caption">
 
+                @*database items displayed here*@
 
                 @Html.DisplayNameFor(model => model.ArriveDate):@Html.DisplayFor(modelItem => item.ArriveDate)<br />
 
@@ -66,4 +70,6 @@
     </div>
 
 }
+
+
 
